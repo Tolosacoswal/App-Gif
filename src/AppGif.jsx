@@ -1,24 +1,33 @@
 
+
 import { useState } from "react";
+import {  AddCategory } from "./componet/AddCategory";
+import { GifGrid } from "./componet/GifGrid";
 export const AppGif = () => {
 
-const [categories, setCategories] = useState(["one punch","dragon ball","atack of titans"]);
-const onAddCategory =()=>{
-  setCategories([...categories,"valorant"]);
+const [categories, setCategories] = useState(["one punch"]);
+
+const onAddCategory =(newCategory)=>
+{
+if (categories.includes(newCategory)) return
+setCategories([newCategory,...categories,]);
 }
  
 
 return (
     <>
     <h1>AppGif</h1>
-    <button onClick={onAddCategory}>agregar</button>
-    <ol>
-      {categories.map( category => {return <li key={category}>{category}</li>})};
-    </ol>
+    <AddCategory 
+    onNewCategory = { onAddCategory}
     
-
-
-
+    />
+    {
+      categories.map((category)=>(
+      <GifGrid 
+      key={category} 
+      category={category}/>)
+      )
+    }
     </>
-    )
+  )
 }
