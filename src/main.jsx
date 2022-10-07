@@ -4,7 +4,7 @@ import { AppGif } from './AppGif'
 import  "./estyles.css";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+   <React.StrictMode>
     <AppGif />
-  </React.StrictMode>
+   </React.StrictMode> 
 )
