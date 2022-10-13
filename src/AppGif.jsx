@@ -1,8 +1,8 @@
 
 
 import { useState } from "react";
-import {  AddCategory } from "./componet/AddCategory";
-import { GifGrid } from "./componet/GifGrid";
+import {  AddCategory,GifGrid } from "./componet";
+
 export const AppGif = () => {
 
 const [categories, setCategories] = useState(["One Piece"]);
