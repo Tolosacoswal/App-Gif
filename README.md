@@ -1,3 +1,3 @@
 # APP-GIF
 
-est es mi proyecto inicial  
+este es mi proyecto inicial  

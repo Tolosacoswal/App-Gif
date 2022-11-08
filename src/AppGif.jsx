@@ -1,7 +1,7 @@
 
 
 import { useState } from "react";
-import {  AddCategory,GifGrid } from "./componet";
+import {  AddCategory,GifGrid } from "./components";
 
 export const AppGif = () => {
 
@@ -30,4 +30,6 @@ return (
     }
     </>
   )
+
+
 }
